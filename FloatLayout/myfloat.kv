@@ -1,0 +1,14 @@
+<Button>:
+    font_size:40
+    color:0.3,0.6,0.7,1
+    size_hint: 0.2, 0.2
+
+<FloatLayout>:
+    Button:
+        pos_hint: {"top":1}
+        text: "Hello"
+
+    Button:
+        id: btn
+        pos_hint: {"top":0.8}
+        text: "World" if btn.state == "normal" else "Down"
