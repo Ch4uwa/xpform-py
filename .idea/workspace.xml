@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bf16693-b948-447f-9664-7e74ffee9db3" name="Default Changelist" comment="sync">
-      <change afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FloatLayout/myfloat.kv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FloatLayout/sysintFloat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Touch/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Touch/touch.kv" afterDir="false" />
+    <list default="true" id="2bf16693-b948-447f-9664-7e74ffee9db3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my.kv" beforeDir="false" afterPath="$PROJECT_DIR$/GridLayout/my.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sysint.py" beforeDir="false" afterPath="$PROJECT_DIR$/GridLayout/sysint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,18 +13,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Touch/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiScreens/ms.kv">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Touch/touch.kv">
+        <entry file="file://$PROJECT_DIR$/MultiScreens/main.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="540">
+                <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -49,6 +51,26 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -62,6 +84,8 @@
         <option value="$PROJECT_DIR$/Touch/touch" />
         <option value="$PROJECT_DIR$/Touch/touch.kv" />
         <option value="$PROJECT_DIR$/Touch/main.py" />
+        <option value="$PROJECT_DIR$/MultiScreens/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -74,7 +98,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1316" />
     <option name="y" value="1" />
-    <option name="width" value="1795" />
+    <option name="width" value="1689" />
     <option name="height" value="1365" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -94,12 +118,7 @@
             <path>
               <item name="systemintegration" type="b2602c69:ProjectViewProjectNode" />
               <item name="systemintegration" type="462c0819:PsiDirectoryNode" />
-              <item name=".vscode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="systemintegration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="systemintegration" type="462c0819:PsiDirectoryNode" />
-              <item name="Touch" type="462c0819:PsiDirectoryNode" />
+              <item name="MultiScreens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,7 +264,8 @@
       <workItem from="1556876207900" duration="611000" />
       <workItem from="1556876891233" duration="5144000" />
       <workItem from="1556884834022" duration="219000" />
-      <workItem from="1556885064959" duration="2626000" />
+      <workItem from="1556885064959" duration="2925000" />
+      <workItem from="1556978088205" duration="1536000" />
     </task>
     <task id="LOCAL−00001" summary="sync">
       <created>1556877743300</created>
@@ -253,28 +273,34 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1556877743301</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="sync">
+      <created>1556889534859</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1556889534859</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12868000" />
+    <option name="totallyTimeSpent" value="14703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1316" y="1" width="1795" height="1365" extended-state="0" />
+    <frame x="1316" y="1" width="1689" height="1365" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1389049" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49969155" visible="true" weight="0.30954358" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969155" weight="0.30954358" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30954358" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30942452" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50030845" side_tool="true" weight="0.23214285" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3294606" />
@@ -335,13 +361,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Touch/touch.kv">
+    <entry file="file://$PROJECT_DIR$/TouchDraw/touch.kv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Touch/main.py">
+    <entry file="file://$PROJECT_DIR$/TouchDraw/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiScreens/ms.kv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiScreens/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
