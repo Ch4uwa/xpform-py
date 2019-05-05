@@ -1,9 +1,10 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import ObjectProperty
-from kivy.uix.popup import Popup
 from kivy.uix.label import Label
+from kivy.uix.popup import Popup
+from kivy.uix.screenmanager import Screen, ScreenManager
+
 from database import DataBase
 
 
@@ -56,8 +57,8 @@ class LoginWindow(Screen):
 
 
     def reset(self):
-        self.email.text = ''
-        self.password.text = ''
+        self.email.text = ""
+        self.password.text = ""
 
 
 class MainWindow(Screen):
@@ -93,7 +94,7 @@ def invalidForm():
 kv = Builder.load_file('style.kv')
 
 sm = WindowManager()
-db = DataBase("users.txt")
+db = DataBase('users.txt')
 
 screens = [LoginWindow(name='login'), CreatAccountWindow(name='create'), MainWindow(name='main')]
 for screen in screens:
@@ -108,4 +109,4 @@ class MyMainApp(App):
 
 
 if __name__ == '__main__':
-    App().run()
+    MyMainApp().run()

@@ -1,5 +1,6 @@
-import datetime
+# database.py
 
+import datetime
 
 class DataBase:
     def __init__(self, filename):
@@ -8,9 +9,8 @@ class DataBase:
         self.file = None
         self.load()
 
-
     def load(self):
-        self.file = open(self.filename, 'r')
+        self.file = open(self.filename, "r")
         self.users = {}
 
         for line in self.file:
@@ -19,13 +19,11 @@ class DataBase:
 
         self.file.close()
 
-
     def get_user(self, email):
         if email in self.users:
             return self.users[email]
         else:
             return -1
-
 
     def add_user(self, email, password, name):
         if email.strip() not in self.users:
@@ -36,13 +34,11 @@ class DataBase:
             print('Email exists alreasy')
             return -1
 
-
     def validate(self, email, password):
         if self.get_user(email) != -1:
             return self.users[email][0] == password
         else:
             return False
-
 
     def save(self):
         with open(self.filename, 'w') as f:
