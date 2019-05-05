@@ -1,0 +1,23 @@
+#:kivy 1.10.1
+
+<Widgets>:
+    Button:
+        text:'Me Press'
+        on_release: root.btn()
+
+
+<P>:
+    Label:
+        text: 'Password'
+        size_hint: 0.6, 0.2
+        pos_hint: {'x':0.2, 'top':1}
+        
+    TextInput:
+        size_hint: 0.6, 0.2
+        pos_hint: {'x':0.2, 'top':0.8}
+        multiline: False
+        
+    Button:
+        text: 'Submit'
+        size_hint: 0.6, 0.2
+        pos_hint: {'x':0.2, 'top':0.6}
