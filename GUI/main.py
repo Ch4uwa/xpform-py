@@ -1,13 +1,14 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import ObjectProperty
-from kivy.uix.popup import Popup
 from kivy.uix.label import Label
+from kivy.uix.popup import Popup
+from kivy.uix.screenmanager import Screen, ScreenManager
+
 from database import DataBase
 
 
-class CreatAccountWindow(Screen):
+class CreateAccountWindow(Screen):
     namee = ObjectProperty(None)
     email = ObjectProperty(None)
     password = ObjectProperty(None)
@@ -32,9 +33,9 @@ class CreatAccountWindow(Screen):
 
 
     def reset(self):
-        self.email.text = ''
-        self.password.text = ''
-        self.namee.text = ''
+        self.email.text = ""
+        self.password.text = ""
+        self.namee.text = ""
 
 
 class LoginWindow(Screen):
@@ -52,12 +53,12 @@ class LoginWindow(Screen):
 
     def createBtn(self):
         self.reset()
-        sm.current = 'create'
+        sm.current = "create"
 
 
     def reset(self):
-        self.email.text = ''
-        self.password.text = ''
+        self.email.text = ""
+        self.password.text = ""
 
 
 class MainWindow(Screen):
@@ -90,12 +91,12 @@ def invalidForm():
     pop.open()
 
 
-kv = Builder.load_file('style.kv')
+kv = Builder.load_file("style.kv")
 
 sm = WindowManager()
 db = DataBase("users.txt")
 
-screens = [LoginWindow(name='login'), CreatAccountWindow(name='create'), MainWindow(name='main')]
+screens = [LoginWindow(name="login"), CreateAccountWindow(name="create"), MainWindow(name="main")]
 for screen in screens:
     sm.add_widget(screen)
 
@@ -107,5 +108,5 @@ class MyMainApp(App):
         return sm
 
 
-if __name__ == '__main__':
-    App().run()
+if __name__ == "__main__":
+    MyMainApp().run()

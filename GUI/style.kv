@@ -1,7 +1,6 @@
 #:kivy 1.10.1
-
 <CreateAccountWindow>:
-    name: 'create'
+    name: "create"
 
     namee: namee
     email: email
@@ -14,13 +13,13 @@
             size: root.width, root.height/2
 
             Label:
-                text: 'Create an Account'
+                text: "Create an Account"
                 size_hint: 0.8, 0.2
                 pos_hint: {'x':0.1, 'top':1}
                 font_size: (root.width**2 + root.height**2) / 14**4
 
             Label:
-                text: 'Name'
+                text: "Name: "
                 size_hint: 0.5, 0.12
                 pos_hint: {'x':0, 'top':0.8}
                 font_size: (root.width**2 + root.height**2) / 14**4
@@ -41,7 +40,7 @@
             TextInput:
                 id: email
                 size_hint: 0.4, 0.12
-                pos_hint: {'x':0, 'top':0.8-0.13}
+                pos_hint: {'x':0.5, 'top':0.8-0.13}
                 multiline: False
                 font_size: (root.width**2 + root.height**2) / 14**4
 
@@ -65,7 +64,7 @@
             pos_hint: {'x':0.3, 'y':0.25}
             font_size: (root.width**2 + root.height**2) / 17**4
             on_release:
-                root.manager.transition.direction = 'left'
+                root.manager.transition.direction = "left"
                 root.login()
             
         Button:
@@ -74,7 +73,7 @@
             pos_hint: {'x':0.2, 'y':0.05}
             font_size: (root.width**2 + root.height**2) / 14**4
             on_release:
-                root.manager.transition,direction = 'left'
+                root.manager.transition.direction = "left"
                 root.submit()
 
 
@@ -151,7 +150,7 @@
             text: 'Email: '
 
         Label:
-            id: n
+            id: created
             size_hint: 0.8, 0.2
             pos_hint: {'x':0.1, 'top':0.5}
             text: 'Created: '
