@@ -94,7 +94,7 @@ def invalidForm():
 kv = Builder.load_file("style.kv")
 
 sm = WindowManager()
-db = DataBase("users.txt")
+db = DataBase('users.txt')
 
 screens = [LoginWindow(name="login"), CreateAccountWindow(name="create"), MainWindow(name="main")]
 for screen in screens:
