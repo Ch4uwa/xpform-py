@@ -4,7 +4,7 @@ from kivy.properties import ObjectProperty
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
 from kivy.uix.screenmanager import Screen, ScreenManager
-
+from kivy.core.window import Window
 from database import DataBase
 
 
@@ -23,10 +23,12 @@ class CreateAccountWindow(Screen):
                 sm.current = 'login'
             else:
                 invalidForm()
+                self.reset()
         else:
             invalidForm()
+            self.reset()
 
-    
+
     def login(self):
         self.reset()
         sm.current = 'login'
@@ -49,6 +51,7 @@ class LoginWindow(Screen):
             sm.current = 'main'
         else:
             invalidLogin()
+            self.reset()
 
 
     def createBtn(self):
@@ -105,8 +108,8 @@ sm.current = 'login'
 
 class MyMainApp(App):
     def build(self):
+        self.title = "Awsome App"
         return sm
-
 
 if __name__ == "__main__":
     MyMainApp().run()
